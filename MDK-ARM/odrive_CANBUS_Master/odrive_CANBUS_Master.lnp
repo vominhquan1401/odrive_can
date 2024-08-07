@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"odrive_canbus_master\startup_stm32f407xx.o"
+"odrive_canbus_master\main.o"
+"odrive_canbus_master\stm32f4xx_it.o"
+"odrive_canbus_master\stm32f4xx_hal_msp.o"
+"odrive_canbus_master\stm32f4xx_hal_can.o"
+"odrive_canbus_master\stm32f4xx_hal_rcc.o"
+"odrive_canbus_master\stm32f4xx_hal_rcc_ex.o"
+"odrive_canbus_master\stm32f4xx_hal_flash.o"
+"odrive_canbus_master\stm32f4xx_hal_flash_ex.o"
+"odrive_canbus_master\stm32f4xx_hal_flash_ramfunc.o"
+"odrive_canbus_master\stm32f4xx_hal_gpio.o"
+"odrive_canbus_master\stm32f4xx_hal_dma_ex.o"
+"odrive_canbus_master\stm32f4xx_hal_dma.o"
+"odrive_canbus_master\stm32f4xx_hal_pwr.o"
+"odrive_canbus_master\stm32f4xx_hal_pwr_ex.o"
+"odrive_canbus_master\stm32f4xx_hal_cortex.o"
+"odrive_canbus_master\stm32f4xx_hal.o"
+"odrive_canbus_master\stm32f4xx_hal_exti.o"
+"odrive_canbus_master\stm32f4xx_hal_tim.o"
+"odrive_canbus_master\stm32f4xx_hal_tim_ex.o"
+"odrive_canbus_master\system_stm32f4xx.o"
+"odrive_canbus_master\can.o"
+--strict --scatter "odrive_CANBUS_Master\odrive_CANBUS_Master.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "odrive_CANBUS_Master.map" -o odrive_CANBUS_Master\odrive_CANBUS_Master.axf
